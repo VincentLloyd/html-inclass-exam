@@ -1,0 +1,96 @@
+body {
+  background-color: #1C1C1C;
+}
+
+/* - - -  TEXT  - - - */
+
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 24px;
+  color: #FFF;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
+  font-size:18px;
+  color: #FFF;
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
+
+.location {
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+}
+
+.copyright {
+  font-size: 13px;
+  margin: 10px 0 20px 0;
+}
+
+/* - - -  GENERAL: padding divs  - - - */
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.flex.col {
+  flex-direction: column;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 90%;
+}
+
+/* - - -  IMAGES + FRAMES  - - - */
+
+.feature-mug {
+  min-width: 288px;
+  max-width: 100%;
+  height: auto;
+}
+
+.mugs {
+  width: 288px;
+  height: auto;
+}
+
+.map {
+  width: 320px;
+  height: 250px;
+  display: block;
+  margin: auto;
+}
+
+/* - - -  BREAKPOINTS  - - - */
+
+@media only screen and (min-width: 720px) {
+  .feature-mug {
+    min-width: 288px;
+    max-width: 604px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .flex.wrap {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 950px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+    .map {
+      width: 604px;
+      height: 302px;
+      display: block;
+      margin: auto;
+    }
+}
